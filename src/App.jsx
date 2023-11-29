@@ -1,12 +1,12 @@
 import './App.css';
-import Form from './components/Form';
 import Banner from './components/Banner';
+import FormBox from './components/FormBox/index.jsx';
 
 function App() {
 	return (
 		<>
 			<Banner />
-			<Form />
+			<FormBox />
 		</>
 	);
 }

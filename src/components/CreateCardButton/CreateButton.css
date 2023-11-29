@@ -1,0 +1,20 @@
+.card-create-button {
+    color: #FFF;
+    width: 109px;
+    height: 60px;
+    margin: 22px 60px 22px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    background-color: rgb(112, 46, 178);
+}
+
+.card-create-button:hover {
+    transition: all 0.5s;
+    background-color: rgb(160, 86, 255);
+}
+
