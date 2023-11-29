@@ -1,0 +1,90 @@
+.container {
+    width: 80%;
+    margin: 30px auto 15px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.04);
+    -webkit-box-shadow: 7px 7px 10px -7px rgba(173,173,173,0.3);
+    -moz-box-shadow: 7px 7px 10px -7px rgba(173,173,173,0.3);
+    box-shadow: 7px 7px 10px -7px rgba(173,173,173,0.3);
+}
+
+.my-form {
+    margin: 10px;
+}
+
+.title-h1 {
+    color: azure;
+    margin: 10px 60px 20px;
+    padding: 22px 0;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 400;
+}
+
+label {
+    color: azure;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.name-div {
+    margin: 20px 60px 10px 60px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.lane-div {
+    margin: 20px 60px 10px 60px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.image-div {
+    margin: 20px 60px 10px 60px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.select-div {
+    margin: 20px 60px 10px 60px;
+    font-size: 30px;
+    text-align: left;
+}
+
+input, select {
+    color: azure;
+    width: 100%;
+    border: none;
+    padding: 20px 20px;
+    font-size: 16px;
+    text-align: left;
+    object-fit: contain;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    background-color: rgba(62, 62, 77, 0.47);
+    -webkit-box-shadow: 7px 7px 10px -7px rgba(173,173,173,0.1);
+    -moz-box-shadow: 7px 7px 10px -7px rgba(173,173,173,0.1);
+    box-shadow: 7px 7px 10px -7px rgba(173,173,173,0.1);
+}
+
+.card-create-button {
+    color: #FFF;
+    width: 109px;
+    height: 60px;
+    margin: 22px 60px 22px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    background-color: rgb(112, 46, 178);
+}
+
+.card-create-button:hover {
+    transition: all 0.5s;
+    background-color: rgb(160, 86, 255);
+}
+
