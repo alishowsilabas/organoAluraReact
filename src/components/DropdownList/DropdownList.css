@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Prata&display=swap');
+
+.drop-down-list {
+    padding: 20px 60px 10px 60px;
+    font-size: 16px;
+    text-align: left;
+    object-fit: contain;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.drop-down-list label {
+    color: azure;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.drop-down-list select {
+    color: azure;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 20px 20px;
+    font-size: 16px;
+    text-align: left;
+    object-fit: contain;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    background-color: rgba(32, 32, 40, 0.44);
+    -webkit-box-shadow: 7px 7px 10px -7px rgb(84, 80, 80, 0.6);
+    -moz-box-shadow: 7px 7px 10px -7px rgb(84, 80, 80, 0.6);
+    box-shadow: 7px 7px 10px -7px rgb(84, 80, 80, 0.6);
+}
+
+.drop-down-list select:hover {
+    transition: all 0.5ms;
+    background-color: rgba(55, 55, 70, 0.44);
+}

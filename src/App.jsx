@@ -1,6 +1,6 @@
 import './App.css';
-import Banner from './components/Banner';
-import FormBox from './components/FormBox/index.jsx';
+import Banner from './components/Banner/Index.jsx';
+import FormBox from './components/FormBox/Index.jsx';
 
 function App() {
 	return (

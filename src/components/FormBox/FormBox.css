@@ -1,9 +1,17 @@
-.section-box-container {
+.box-container {
     width: 80%;
     margin: 30px auto 15px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.04);
-    -webkit-box-shadow: 7px 7px 10px -7px rgba(173,173,173,0.3);
-    -moz-box-shadow: 7px 7px 10px -7px rgba(173,173,173,0.3);
-    box-shadow: 7px 7px 10px -7px rgba(173,173,173,0.3);
+    background-color: rgba(42, 42, 52, 0.59);
+    -webkit-box-shadow: 7px 7px 10px -7px rgb(84, 80, 80, 0.6);
+    -moz-box-shadow: 7px 7px 10px -7px rgb(84, 80, 80, 0.6);
+    box-shadow: 7px 7px 10px -7px rgb(84, 80, 80, 0.6);
+}
+
+.box-container h2 {
+    color: azure;
+    padding: 20px 15px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
 }
