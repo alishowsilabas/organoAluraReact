@@ -10,3 +10,13 @@
 body {
     background-color: #202028;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    filter: none;
+    caret-color: rgb(86, 92, 105);
+    -webkit-text-fill-color: rgb(86, 92, 105);
+    transition: background-color 9999s ease-in-out 0s;
+}
