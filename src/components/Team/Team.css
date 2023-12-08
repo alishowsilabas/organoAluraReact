@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Prata&display=swap');
+
+.main-section {
+    /*margin: 30px 20px;*/
+    padding: 32px;
+    text-align: center;
+}
+
+.t1 {
+    padding: 8px;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 400;
+    border-bottom: 4px solid;
+}
+
+.g2 {
+    padding: 8px;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 400;
+    border-bottom: 4px solid;
+}
+
+.jdg {
+    padding: 8px;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 400;
+    border-bottom: 4px solid;
+}
+
+.loud {
+    padding: 8px;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 400;
+    border-bottom: 4px solid;
+}

@@ -6,7 +6,7 @@ import FormField from '../FormField/Index.jsx';
 import DropdownList from '../DropdownList/Index.jsx';
 import CreateCardButton from '../CreateCardButton/Index.jsx';
 
-const FormBox = ({ title }) => {
+const FormBox = ({ title, registryPlayer }) => {
 	const [nickname, setNickname] = useState('');
 	const [lane, setLane] = useState('');
 	const [image, setImage] = useState('');
@@ -14,7 +14,12 @@ const FormBox = ({ title }) => {
 
 	const onSendForm = (event) => {
 		event.preventDefault();
-		console.log('The Form was submitted! ', nickname, lane, image, team);
+		registryPlayer({
+			nickname,
+			lane,
+			image,
+			team
+		});
 	};
 
 	return (
@@ -59,7 +64,8 @@ const FormBox = ({ title }) => {
 };
 
 FormBox.propTypes = {
-	title: PropTypes.string
+	title: PropTypes.string,
+	registryPlayer: PropTypes.any
 };
 
 FormBox.defaultProps = {

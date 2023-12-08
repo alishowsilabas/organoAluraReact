@@ -4,6 +4,7 @@ import './FormField.css';
 
 const FormField = ({ id, label, placeholder, mandatory, changed, inputValue, ...inputProps }) => {
 	const onType = (event) => {
+		console.log(inputValue);
 		changed(event.target.value);
 	};
 
