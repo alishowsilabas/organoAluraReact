@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 
 import './FormField.css';
 
-const FormField = ({ id, label, placeholder, mandatory, changed, inputValue, ...inputProps }) => {
+const FormField = ({ id, label, placeholder, required, changed, inputValue, ...inputProps }) => {
 	const onType = (event) => {
-		console.log(inputValue);
+		console.log(label, ': ', inputValue);
 		changed(event.target.value);
 	};
 
@@ -14,7 +14,7 @@ const FormField = ({ id, label, placeholder, mandatory, changed, inputValue, ...
 			<input
 				value={inputValue}
 				onChange={onType}
-				required={mandatory}
+				required={required}
 				id={id}
 				type="text"
 				placeholder={placeholder}
@@ -28,7 +28,7 @@ FormField.propTypes = {
 	id: PropTypes.string.isRequired,
 	label: PropTypes.string.isRequired,
 	placeholder: PropTypes.string.isRequired,
-	mandatory: PropTypes.bool,
+	required: PropTypes.bool,
 	changed: PropTypes.any,
 	inputValue: PropTypes.any
 };

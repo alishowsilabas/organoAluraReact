@@ -6,7 +6,7 @@ import FormField from '../FormField/Index.jsx';
 import DropdownList from '../DropdownList/Index.jsx';
 import CreateCardButton from '../CreateCardButton/Index.jsx';
 
-const FormBox = ({ title, registryPlayer }) => {
+const FormBox = ({ title, registryPlayer, options }) => {
 	const [nickname, setNickname] = useState('');
 	const [lane, setLane] = useState('');
 	const [image, setImage] = useState('');
@@ -27,7 +27,7 @@ const FormBox = ({ title, registryPlayer }) => {
 			<form onSubmit={onSendForm} className="my-form">
 				<h2>{title}</h2>
 				<FormField
-					mandatory={true}
+					required={true}
 					id={'nickname'}
 					label={'Nickname'}
 					placeholder={'Digite seu Nick'}
@@ -35,7 +35,7 @@ const FormBox = ({ title, registryPlayer }) => {
 					changed={(inputValue) => setNickname(inputValue)}
 				/>
 				<FormField
-					mandatory={true}
+					required={true}
 					id={'lane'}
 					label={'Lane'}
 					placeholder={'Digite sua Lane'}
@@ -43,7 +43,7 @@ const FormBox = ({ title, registryPlayer }) => {
 					changed={(inputValue) => setLane(inputValue)}
 				/>
 				<FormField
-					mandatory={true}
+					required={true}
 					id={'image'}
 					label={'Imagem'}
 					placeholder={'Insira o link da sua imagem'}
@@ -51,11 +51,12 @@ const FormBox = ({ title, registryPlayer }) => {
 					changed={(inputValue) => setImage(inputValue)}
 				/>
 				<DropdownList
+					options={options}
+					required={true}
 					id={'dropdowns'}
 					label={'Time'}
 					defaultValue={'Escolha seu Time'}
-					inputValue={team}
-					changed={(inputValue) => setTeam(inputValue)}
+					onChange={setTeam}
 				/>
 				<CreateCardButton>Criar Card</CreateCardButton>
 			</form>
@@ -65,7 +66,8 @@ const FormBox = ({ title, registryPlayer }) => {
 
 FormBox.propTypes = {
 	title: PropTypes.string,
-	registryPlayer: PropTypes.any
+	registryPlayer: PropTypes.any,
+	options: PropTypes.any
 };
 
 FormBox.defaultProps = {
