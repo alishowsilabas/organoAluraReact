@@ -1,15 +1,15 @@
 import { useState } from 'react';
 
 import './App.css';
-import Team from './components/Team/Index.jsx';
-import Banner from './components/Banner/Index.jsx';
-import FormBox from './components/FormBox/Index.jsx';
+import Team from './components/Team/';
+import Banner from './components/Banner/';
+import FormBox from './components/FormBox/';
 
 function App() {
 	const teams = [
 		{
 			name: 'T1',
-			primaryColor: 'rgb(33,31,31)',
+			primaryColor: 'rgb(255,0,47)',
 			secondaryColor: 'rgb(255,185,196)',
 			// secondaryColor: 'rgb(227, 0, 43)',
 			className: 't1',
@@ -17,7 +17,7 @@ function App() {
 		},
 		{
 			name: 'G2',
-			primaryColor: 'rgb(33,31,31)',
+			primaryColor: 'rgb(203, 203, 203)',
 			secondaryColor: 'rgb(201,200,200)',
 			// secondaryColor: 'rgb(143,143,145)',
 			className: 'g2',
@@ -25,15 +25,15 @@ function App() {
 		},
 		{
 			name: 'JDG',
-			primaryColor: 'rgb(33,31,31)',
+			primaryColor: 'rgb(255,0,43)',
 			secondaryColor: 'rgb(255,194,205)',
 			// secondaryColor: 'rgb(200, 16, 46)',
 			className: 'jdg',
 			id: 'jdg'
 		},
 		{
-			name: 'Loud',
-			primaryColor: 'rgb(33,31,31)',
+			name: 'LOUD',
+			primaryColor: 'rgba(69, 248, 73)',
 			secondaryColor: 'rgb(205,255,206)',
 			// secondaryColor: 'rgba(69, 248, 73)',
 			className: 'loud',

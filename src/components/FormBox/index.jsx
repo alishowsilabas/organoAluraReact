@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import './FormBox.css';
-import FormField from '../FormField/Index.jsx';
-import DropdownList from '../DropdownList/Index.jsx';
+import './styles.css';
+import FormField from '../FormField/index.jsx';
+import DropdownList from '../DropdownList/index.jsx';
 import CreateCardButton from '../CreateCardButton/Index.jsx';
 
 const FormBox = ({ title, registryPlayer, options }) => {
@@ -14,6 +14,7 @@ const FormBox = ({ title, registryPlayer, options }) => {
 
 	const onSendForm = (event) => {
 		event.preventDefault();
+		console.log('Form data: ', { nickname, lane, image, team });
 		registryPlayer({
 			nickname,
 			lane,

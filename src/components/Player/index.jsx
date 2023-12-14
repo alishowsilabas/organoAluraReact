@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 
-import './Player.css';
+import './styles.css';
 
 const Player = ({ nickname, lane, image }) => {
+	console.log('Player props: ', { nickname, lane, image });
 	return (
 		<div className="container">
 			<div className="header">

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import './FormField.css';
+import './styles.css';
 
 const FormField = ({ id, label, placeholder, required, changed, inputValue, ...inputProps }) => {
 	const onType = (event) => {

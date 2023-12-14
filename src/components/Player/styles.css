@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Prata&display=swap');
 
 .container {
-    width: 280px;
+    width: 180px;
+    height: 300px;
+    margin: 4px;
 }
 
 .container .header {
     background-color: #F0F0F0;
     border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
 }
 
 .container img {
@@ -26,7 +29,7 @@
 }
 
 .container .footer h4 {
-    color: #6278F7;
+    color: #7832ff;
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;

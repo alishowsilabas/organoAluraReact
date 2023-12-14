@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import './DropdownList.css';
+import './styles.css';
 
 const DropdownList = ({ id, label, defaultValue, onChange, required, options }) => {
 	return (
