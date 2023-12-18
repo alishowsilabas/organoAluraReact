@@ -2,30 +2,41 @@
 
 .container {
     width: 180px;
-    height: 300px;
-    margin: 4px;
+    margin: 4px 4px 20px 4px;
 }
 
 .container .header {
     background-color: #F0F0F0;
     border-radius: 10px 10px 0 0;
-    margin-bottom: 20px;
+}
+
+.header.t1 {
+    background-color: rgb(224, 60, 94);
+}
+
+.header.g2 {
+    background-color: rgb(203, 203, 203);
+}
+
+.header.jdg {
+    background-color: rgb(150, 50, 58);
+}
+
+.header.loud {
+    background-color: rgba(164, 255, 168, 0.9);
 }
 
 .container img {
-    width: 100px;
-    border-radius: 50%;
+    width: 92px;
+    border-radius: 100%;
     position: relative;
     bottom: -50px;
 }
 
-
 .container .footer {
     background: #FFFFFF;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
-    border-radius: 0 0 10px 10px;
-    padding-top: 90px;
-    padding-bottom: 40px;
+    padding-top: 65px;
+    padding-bottom: 20px;
 }
 
 .container .footer h4 {

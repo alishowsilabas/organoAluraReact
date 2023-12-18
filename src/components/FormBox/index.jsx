@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './styles.css';
 import FormField from '../FormField/index.jsx';
 import DropdownList from '../DropdownList/index.jsx';
-import CreateCardButton from '../CreateCardButton/Index.jsx';
+import CreateCardButton from '../CreateCardButton/index.jsx';
 
 const FormBox = ({ title, registryPlayer, options }) => {
 	const [nickname, setNickname] = useState('');
@@ -21,6 +21,10 @@ const FormBox = ({ title, registryPlayer, options }) => {
 			image,
 			team
 		});
+		setNickname('');
+		setLane('');
+		setImage('');
+		setTeam('');
 	};
 
 	return (

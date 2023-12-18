@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;600;700&family=Prata&display=swap');
+* {
+
+}
+
+footer {
+    position: static;
+    color: #747c81;
+    padding: 8px 0 8px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #0e0e11;
+}
+
+.main-footer-container {
+}
+
+.socials-and-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+}
+
+.socials-and-contact a {
+    color: #747c81;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.socials-and-contact a:hover {
+    color: #ffffff;
+}
+
+footer a:visited {
+    color: #747c81;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    margin: 4px 0 4px 0;
+    padding-top: 18px;
+    padding-right: 12px;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact {
+    padding-right: 150px;
+    border-right: 1px solid;
+    font-family: 'Lato', sans-serif;
+}
+
+.linkedin {
+    padding-right: 150px;
+    border-right: 1px solid;
+    font-family: 'Lato', sans-serif;
+}
+
+.github {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+}

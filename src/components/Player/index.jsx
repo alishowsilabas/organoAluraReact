@@ -2,11 +2,10 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-const Player = ({ nickname, lane, image }) => {
-	console.log('Player props: ', { nickname, lane, image });
+const Player = ({ nickname, lane, image, className }) => {
 	return (
 		<div className="container">
-			<div className="header">
+			<div className={`header ${className}`}>
 				<img src={image} alt={nickname} />
 				<div className="footer">
 					<h4>{nickname}</h4>
@@ -20,7 +19,8 @@ const Player = ({ nickname, lane, image }) => {
 Player.propTypes = {
 	nickname: PropTypes.any,
 	lane: PropTypes.any,
-	image: PropTypes.any
+	image: PropTypes.any,
+	className: PropTypes.any
 };
 
 export default Player;

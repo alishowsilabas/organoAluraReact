@@ -3,7 +3,10 @@ import { useState } from 'react';
 import './App.css';
 import Team from './components/Team/';
 import Banner from './components/Banner/';
+import Footer from './components/Footer/';
 import FormBox from './components/FormBox/';
+
+// import player from './components/Player/index.jsx';
 
 function App() {
 	const teams = [
@@ -44,7 +47,6 @@ function App() {
 	const [players, setPlayers] = useState([]);
 
 	const newPlayer = (player) => {
-		console.log(player);
 		setPlayers([...players, player]);
 	};
 
@@ -56,13 +58,14 @@ function App() {
 			{teams.map((team) => (
 				<Team
 					key={team.name}
-					players={players}
+					players={players.filter((player) => player.team === team.name)}
 					teamName={team.name}
 					className={team.className || ''}
 					bgColor={team.secondaryColor}
 					nameColor={team.primaryColor}
 				/>
 			))}
+			<Footer />
 		</>
 	);
 }

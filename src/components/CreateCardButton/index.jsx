@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import './CreateButton.css';
+import './styles.css';
 
 const CreateCardButton = (props) => {
 	return <button className="card-create-button">{props.children}</button>;

@@ -12,7 +12,7 @@
 
 .drop-down-list label {
     color: azure;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
 }
@@ -23,7 +23,7 @@
     cursor: pointer;
     border: none;
     padding: 20px 20px;
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
     object-fit: contain;
     font-family: Montserrat, sans-serif;
