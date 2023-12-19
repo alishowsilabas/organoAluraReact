@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Prata&display=swap');
 
 .form-field-div {
-    padding: 20px 60px 10px 60px;
+    padding: 20px 60px 0 60px;
     font-size: 18px;
     text-align: left;
 }

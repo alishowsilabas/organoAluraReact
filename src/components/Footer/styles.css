@@ -4,7 +4,7 @@
 }
 
 footer {
-    position: static;
+    width: 100%;
     color: #747c81;
     padding: 8px 0 8px 0;
     font-size: 12px;
@@ -26,13 +26,21 @@ footer {
 
 .socials-and-contact a {
     color: #747c81;
-    display: flex;
-    cursor: pointer;
+    text-align: center;
     text-decoration: none;
+    font-family: 'Lato', sans-serif;
 }
 
 .socials-and-contact a:hover {
     color: #ffffff;
+}
+
+.socials-and-contact div {
+    width: 100%;
+}
+
+.socials-and-contact div:not(:last-child) {
+    border-right: 1px solid;
 }
 
 footer a:visited {
@@ -41,29 +49,9 @@ footer a:visited {
 
 .copyright {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 4px 0 4px 0;
     padding-top: 18px;
     padding-right: 12px;
-    font-family: 'Lato', sans-serif;
-}
-
-.contact {
-    padding-right: 150px;
-    border-right: 1px solid;
-    font-family: 'Lato', sans-serif;
-}
-
-.linkedin {
-    padding-right: 150px;
-    border-right: 1px solid;
-    font-family: 'Lato', sans-serif;
-}
-
-.github {
-    font-family: 'Lato', sans-serif;
-}
-
-a {
     font-family: 'Lato', sans-serif;
 }

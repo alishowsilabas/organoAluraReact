@@ -1,6 +1,11 @@
 .box-container {
+    width: 100%;
+    height: fit-content;
+}
+
+.box-container form {
     width: 70%;
-    margin: 30px auto 60px;
+    margin: 30px auto 30px;
     border-radius: 20px;
     background-color: rgba(42, 42, 52, 0.59);
     -webkit-box-shadow: 7px 7px 10px -7px rgb(84, 80, 80, 0.6);
@@ -10,8 +15,9 @@
 
 .box-container h2 {
     color: azure;
-    padding: 20px 15px;
-    font-size: 24px;
+    padding: 10px 15px 0 15px;
     text-align: center;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }

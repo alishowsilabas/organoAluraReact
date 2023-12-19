@@ -4,23 +4,25 @@
     position: relative;
     text-align: center;
     margin: 0 44px 24px 44px;
-    border-radius: 24px 24px 0 0;
-    overflow: hidden;
 }
 
 .background.t1 {
+    border-radius: 50px 50px 0 0;
     background-image: url("assets/images/t1.png");
 }
 
 .background.g2 {
+    border-radius: 50px 50px 0 0;
     background-image: url("assets/images/g2.jpg");
 }
 
 .background.jdg {
+    border-radius: 50px 50px 0 0;
     background-image: url("assets/images/jdg.png");
 }
 
 .background.loud {
+    border-radius: 50px 50px 0 0;
     background-image: url("assets/images/loud.png");
 }
 
@@ -33,7 +35,7 @@
     z-index: -1;
     background-size: cover;
     background-position: center;
-    opacity: 60%;
+    opacity: 70%;
 }
 
 .main-section h3 {

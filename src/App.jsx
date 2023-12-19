@@ -51,7 +51,7 @@ function App() {
 	};
 
 	return (
-		<>
+		<div className="app-container">
 			<Banner />
 			<FormBox options={teams} registryPlayer={(player) => newPlayer(player)} />
 
@@ -66,7 +66,7 @@ function App() {
 				/>
 			))}
 			<Footer />
-		</>
+		</div>
 	);
 }
 
