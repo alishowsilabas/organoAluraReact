@@ -10,7 +10,7 @@ const FormBox = ({ title, registryPlayer, options }) => {
 	const [nickname, setNickname] = useState('');
 	const [lane, setLane] = useState('');
 	const [image, setImage] = useState('');
-	const [team, setTeam] = useState('');
+	const [team, setTeam] = useState('1');
 
 	const onSendForm = (event) => {
 		event.preventDefault();
@@ -24,7 +24,7 @@ const FormBox = ({ title, registryPlayer, options }) => {
 		setNickname('');
 		setLane('');
 		setImage('');
-		setTeam('');
+		setTeam('1');
 	};
 
 	return (
@@ -60,8 +60,9 @@ const FormBox = ({ title, registryPlayer, options }) => {
 					required={true}
 					id={'dropdowns'}
 					label={'Time'}
-					defaultValue={'Escolha seu Time'}
+					placeholder={'Escolha seu Time'}
 					onChange={setTeam}
+					inputValue={team}
 				/>
 				<CreateCardButton>Criar Card</CreateCardButton>
 			</form>

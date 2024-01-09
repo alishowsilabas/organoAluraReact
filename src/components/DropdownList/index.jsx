@@ -2,17 +2,14 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-const DropdownList = ({ id, label, defaultValue, onChange, required, options }) => {
+const DropdownList = ({ id, label, placeholder, onChange, required, options, inputValue }) => {
 	return (
 		<div className="drop-down-list">
 			<label htmlFor={id}>{label}</label>
-			<select
-				onChange={(event) => onChange(event.target.value)}
-				id={id}
-				defaultValue={defaultValue}
-				required={required}
-			>
-				<option value="">{defaultValue}</option>
+			<select value={inputValue} onChange={(event) => onChange(event.target.value)} id={id} required={required}>
+				<option value="1" disabled>
+					{placeholder}
+				</option>
 				{options.map((item) => (
 					<option key={item.id} value={item.name}>
 						{item.name}
@@ -26,10 +23,11 @@ const DropdownList = ({ id, label, defaultValue, onChange, required, options }) 
 DropdownList.propTypes = {
 	id: PropTypes.string.isRequired,
 	label: PropTypes.string.isRequired,
-	defaultValue: PropTypes.string,
+	placeholder: PropTypes.string,
 	onChange: PropTypes.any,
 	required: PropTypes.bool,
-	options: PropTypes.any
+	options: PropTypes.any,
+	inputValue: PropTypes.any
 };
 
 export default DropdownList;
